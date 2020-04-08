@@ -1,0 +1,300 @@
+.menu
+{
+    margin: 1px 0 10px 94.5px;
+    font: 19px/32px "Georgia";
+    color: #333333;
+    display: inline-block;
+}
+
+.main_background
+{
+    background: url(../images/background.png);
+    height: 400px;
+    margin: -12px -7px 0 -312px;
+}
+
+.about_me_button:before
+{
+    content: "";
+    background: url(../images/about_me_icon.png);
+    display: inline-block;
+    height: 15px;
+    width: 13px;
+    margin-right: 11px;
+}
+
+.hobby_button
+{
+    margin-left: 28px
+}
+
+.hobby_button:before
+{
+    content: "";
+    background: url(../images/hobby_icon.png);
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 0 10px -2px 9px;
+}
+
+.video_button:before
+{
+    content: "";
+    background: url(../images/video_icon.png);
+    display: inline-block;
+    height: 15px;
+    width: 16px;
+    margin-left: -59px;
+    margin-right: 10px;
+}
+
+.selfie
+{
+    display: block;
+    width: 330px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: #132d36;
+}
+
+.left_column
+{
+    margin: -190px 0 0 168px;
+}
+
+.authors_container
+{
+    margin-top: 45px;
+    width: 330px;
+}
+
+.authors_list
+{
+    margin-top: -12px;
+    margin-left: -18px;
+}
+
+.films_container
+{
+    margin-top: 42px;
+    width: 330px;
+}
+
+.films_list
+{
+    margin-top: -12px;
+    margin-left: -20px;
+}
+
+.lists_title
+{
+    color: #15a98c;
+    font: 600 24px/32px "Open Sans";
+}
+
+.first_string
+{
+    margin-left: -2px;
+}
+
+.list
+{
+    width: 330px;
+    font: 19px/36px "Georgia";
+    color: #555555;
+}
+
+.quote_block
+{
+    float: right;
+    margin-top: -835px;
+    margin-right: 247px;
+}
+
+.quote
+{
+    color: #ffffff;
+    font: italic 28px/42px "Georgia";
+    margin-bottom: -14px;
+    width: 520px;
+}
+
+.quote_author
+{
+    width: 204px;
+    color: #f5f5f5;
+    font: 600 16px/42px "Open Sans";
+    margin-left: 4px;
+}
+
+.right_column
+{
+    float: right;
+    margin-bottom: 10px;
+    width: 545px;
+    margin-top: -629px;
+    margin-right: 224px;
+}
+
+.about_me_title
+{
+    font: 700 48px/42px "Open Sans";
+    color: #333333;
+    margin-bottom: 31px;
+}
+
+.rectangle
+{
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;
+    margin-bottom: 8px;
+}
+
+.about_me
+{
+    width: 508px;
+    color: #555555;
+    font: 19px/32px "Georgia";
+    margin-top: 31px;
+    margin-left: -1px;
+}
+
+.hobby_and_films_title
+{
+    color: #333333;
+    font: 400 36px/42px "Open Sans";
+}
+
+.hobby_title
+{
+    width: 285px;
+    margin-top: 43px;
+    margin-left: -2px;
+    color: #333333;
+    font: 400 36px/42px "Open Sans";
+
+}
+
+.hobby
+{
+    width: 555px;
+    font: 19px/32px "Georgia";
+    color: #555555;
+    margin-top: -15px;
+    margin-bottom: 137px;
+}
+
+.link
+{
+    width: 139px;
+    font: 19px/32px "Georgia";
+    color: #15a98b;
+    text-decoration: none;
+}
+
+.link_line
+{
+    width: 115px;
+    height: 2px;
+    background-color: #7bcebd;
+    border: none;
+    margin-top: -7px;
+    margin-left: 0px;
+}
+
+.link:after
+{
+    content: "\2192";
+    position: relative;
+    right: -5px;
+    top: 1px;
+}
+
+.films_description_block
+{
+    margin-top: 155px;
+    margin-left: 48px;
+    vertical-align: top;
+}
+
+.description
+{
+    font: 16px/28px "Georgia";
+    color: #555555;
+    width: 283px;
+    margin-top: -12px;
+}
+
+.image_film
+{
+    width: 285px;
+    height: 190px;
+    border-radius: 5px;
+    background-color: #464646;
+    margin-top: 3px;
+    margin-bottom: -10px;
+}
+
+.all_films_titles
+{
+    font: 700 22px/32px "Open Sans";
+    color: #333333;
+}
+
+.one_plus_one
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+}
+
+.love_and_pigeons
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+}
+
+.christmas_story
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 9px;
+}
+
+.rise_of_the_guardians
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.all_films_button
+{
+    border-radius: 5px;
+    background-color: #15a98c;
+    font: 19px/32px "Georgia";
+    color: #f5f5f5;
+    padding: 9px 55px;
+    margin-top: 206px;
+    margin-left: 480px;
+    border:none;
+}
+
+.footer
+{
+    background: url(../images/footer.png);
+    font: 16px/32px "Georgia";
+    color: #555555;
+    margin: 77px -7px 0 -8px;
+    padding-top: 20px;
+    padding-left: 289px;
+    height: 51px;
+}
+
+q
+{
+    quotes: "\00ab" "\00bb";
+}

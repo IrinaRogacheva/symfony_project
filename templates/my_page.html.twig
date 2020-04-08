@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Рогачева Ирина</title>
+    <link href="{{ asset('style.css') }}" rel="stylesheet"/>
+  </head>
+  <body> 
+    <header class="menu">
+      <p class="menu about_me_button">about мне</p>
+      <p class="menu hobby_button">Мое хобби</p>
+      <p class="menu video_button">Любимые фильмы</p>
+    </header>
+    <div class="main_background"></div>
+    <main class="main_block">
+      <div class="left_column">
+        <img class="selfie" src="images/selfie.jpg" alt="Мое фото"/>
+        <div>
+          <div class="authors_container">
+            <h3 class="lists_title">Любимые писатели:</h3>
+            <ul class="list authors_list">
+              <li>Владимир Маяковский</li>
+              <li>Александр Пушкин</li>
+              <li>Стивен Кинг </li>
+              <li>Эдгар По</li>
+            </ul>
+          </div>
+          <div class="films_container">
+            <h3 class="lists_title">Любимые фильмы:</h3>
+            <ol class="list films_list">
+              <li class="first_string">1+1</li>
+              <li>Любовь и голуби</li>
+              <li>Рождественская история</li>
+              <li>Хранители снов</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="quote_block">
+        <p class="quote">Грамм собственного опыта стоит дороже тонны чужих наставлений.</p>
+        <p class="quote_author">Махатма Ганди</p>
+      </div>
+      <div class="right_column">
+        <div>
+          <h1 class="about_me_title">Ирина Рогачева</h1>
+          <img class="rectangle" src="images/rectangle.png" alt="Прямоугольник"/>
+          <div class="about_me">
+            <p>
+              Меня зовут Рогачева Ирина. Окончила Корляковскую школу Санчурского района Кировской области.
+              Мне очень понравилось программировать на уроках информатики. 
+              Программируя, я сразу же загоралась желанием решить данную задачу. Поэтому я пошла на ПС.
+           </p>
+          </div>
+          <div>
+            <h2 class="hobby_and_films_title hobby_title">Мое хобби</h2>
+            <p class="hobby">Я увлекаюсь рукоделием. Особенно люблю делать поделки в разных техниках, пробовать что-то новое.</p>
+          </div>
+          <a class="link" href="https://vk.com/id378187288">Напиши мне</a>
+          <hr class="link_line">
+        </div>
+      </div> 
+    </main>
+    <div class="films_description_block">
+      <h2 class="hobby_and_films_title films_title">Любимые фильмы</h2>
+      <div class="one_plus_one">
+        <img class="image_film" src="images/1+1.jpg" alt="1+1"/>
+        <h4 class="all_films_titles">1+1</h4>
+        <p class="description">
+          Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего 
+          подходит для этой работы, – молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что 
+          Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.
+        </p>
+      </div>
+      <div class="love_and_pigeons">
+        <img class="image_film" src="images/love_and_pigeons.jpg" alt="Любовь и голуби"/>
+        <h4 class="all_films_titles">Любовь и голуби</h4>
+        <p class="description">
+          Ликвидируя неисправность лебедки, Василий Кузякин получил травму и путевку на юг. Встретил роковую женщину Раису Захаровну 
+          и... вернулся Вася с курорта не к себе в деревню, а в дом Раисы Захаровны. Началась для него новая жизнь, в которой было 
+          много непонятного и интересного, но не было дома, где остались Надя, дети и голуби...
+        </p>
+      </div>
+      <div class="christmas_story">
+        <img class="image_film" src="images/christmas_story.jpg" alt="Рождественская история"/>
+        <h4 class="all_films_titles">Рождественская история</h4>
+        <p class="description">
+          Это викторианская поучительная история о старом и ожесточившемся скупердяе Эбенезере Скрудже, который в течение одной 
+          ночи переживает испытание глубокого очищения. Мистер Скрудж — финансист/денежный меняла, который посвятил всю свою жизнь 
+          накоплению богатства. Он презирает всё, кроме денег, включая дружбу, любовь и рождественские праздники.
+        </p>
+      </div>
+      <div class="rise_of_the_guardians">
+        <img class="image_film" src="images/rise_of_the_guardians.jpg" alt="Хранители снов"/>
+        <h4 class="all_films_titles">Хранители снов</h4>
+        <p class="description">
+          Когда злой дух Кромешник посягает на самое дорогое – детские мечты, Северянин, Ледяной Джек, Кролик, Зубная Фея и Песочный 
+          Человек впервые объединяются, чтобы создать команду Хранителей снов...
+        </p>
+      </div>
+      <button class="all_films_button">Все фильмы</button>
+    </div>
+    <footer class="footer">© 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО <q>ПГТУ</q></footer>
+  </body>
+</html>

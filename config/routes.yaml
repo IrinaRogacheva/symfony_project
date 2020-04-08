@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+my_page:
+    path: /RogachevaIrina
+    controller: App\Controller\MyPageController::my_page

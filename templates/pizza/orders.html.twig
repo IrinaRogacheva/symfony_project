@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+    <link href="{{ asset('pizza/orders/style.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="flex">
+            <div class="logo_block">
+                <img class="logo_image" alt="logo" src="{{ asset('pizza/menu/images/logo.png') }}"/>
+                <h1 class="logo">ДОЛГО ПИЦЦА</h1>
+            </div>
+            <div class="access_links_block">
+                <a href="http://127.0.0.1:8000/registration" class="registration_link access_links">Регистрация</a>
+                <a  href="http://127.0.0.1:8000/authorisation" class="authorisation_link access_links">Вход</a>
+            </div>
+        </div>
+        <div class="menu_orders_tabs">
+            <a href="http://127.0.0.1:8000/" class="menu_orders_links">Меню</a>
+            <a class="menu_orders_links">Заказы</a>
+        </div>
+    </header>
+    <main class="orders">
+        <div class="order">
+            <p class="order_detail">Номер</p>
+            <p class="order_detail">Меню</p>
+            <p class="order_detail">Цена</p>
+            <p class="order_detail">Клиент</p>
+            <p class="order_detail">Адрес</p>
+            <p class="order_detail">Статус</p>
+        </div>
+    </main>
+{% endblock %}
+

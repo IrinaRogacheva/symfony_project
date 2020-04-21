@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>Рогачева Ирина</title>
-    <link href="{{ asset('style.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('my_page/style.css') }}" rel="stylesheet"/>
 </head>
 <body>
 <header class="menu">
@@ -15,7 +15,7 @@
 <div class="main_background"></div>
 <main class="main_block">
     <div class="left_column">
-        <img class="selfie" src="images/selfie.jpg" alt="Мое фото"/>
+        <img class="selfie" src="{{ asset('my_page/images/selfie.jpg') }}" alt="Мое фото"/>
         <div>
             <div class="authors_container">
                 <h3 class="lists_title">Любимые писатели:</h3>
@@ -44,7 +44,7 @@
     <div class="right_column">
         <div>
             <h1 class="about_me_title">Ирина Рогачева</h1>
-            <img class="rectangle" src="images/rectangle.png" alt="Прямоугольник"/>
+            <img class="rectangle" src="{{ asset('my_page/images/rectangle.png') }}" alt="Прямоугольник"/>
             <div class="about_me">
                 <p>
                     Меня зовут Рогачева Ирина. Окончила Корляковскую школу Санчурского района Кировской области.
@@ -64,7 +64,7 @@
 <div class="films_description_block">
     <h2 class="hobby_and_films_title films_title">Любимые фильмы</h2>
     <div class="one_plus_one">
-        <img class="image_film" src="images/1+1.jpg" alt="1+1"/>
+        <img class="image_film" src="{{ asset('my_page/images/1+1.jpg') }}" alt="1+1"/>
         <h4 class="all_films_titles">1+1</h4>
         <p class="description">
             Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего
@@ -73,7 +73,7 @@
         </p>
     </div>
     <div class="love_and_pigeons">
-        <img class="image_film" src="images/love_and_pigeons.jpg" alt="Любовь и голуби"/>
+        <img class="image_film" src="{{ asset('my_page/images/love_and_pigeons.jpg') }}" alt="Любовь и голуби"/>
         <h4 class="all_films_titles">Любовь и голуби</h4>
         <p class="description">
             Ликвидируя неисправность лебедки, Василий Кузякин получил травму и путевку на юг. Встретил роковую женщину Раису Захаровну
@@ -82,7 +82,7 @@
         </p>
     </div>
     <div class="stardust">
-        <img class="image_film" src="images/stardust.jpg" alt="Звездная пыль"/>
+        <img class="image_film" src="{{ asset('my_page/images/stardust.jpg') }}" alt="Звездная пыль"/>
         <h4 class="all_films_titles">Звездная пыль</h4>
         <p class="description">
             Маленькая английская деревенька отделена древней стеной от сверхъестественной параллельной вселенной, где царят магия и
@@ -91,7 +91,7 @@
         </p>
     </div>
     <div class="rise_of_the_guardians">
-        <img class="image_film" src="images/rise_of_the_guardians.jpg" alt="Хранители снов"/>
+        <img class="image_film" src="{{ asset('my_page/images/rise_of_the_guardians.jpg') }}" alt="Хранители снов"/>
         <h4 class="all_films_titles">Хранители снов</h4>
         <p class="description">
             Когда злой дух Кромешник посягает на самое дорогое – детские мечты, Северянин, Ледяной Джек, Кролик, Зубная Фея и Песочный

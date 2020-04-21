@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+    <link href="{{ asset('pizza/registration/style.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="flex">
+            <div class="logo_block">
+                <img class="logo_image" alt="logo" src="{{ asset('pizza/menu/images/logo.png') }}"/>
+                <h1 class="logo">ДОЛГО ПИЦЦА</h1>
+            </div>
+            <div class="access_links_block">
+                <a href="http://127.0.0.1:8000/authorisation" class="authorisation_link access_links">Вход</a>
+            </div>
+        </div>
+    </header>
+    <main class="flex_form">
+    <form method="GET" class="registration_form">
+        <p class="form_title">Регистрация</p>
+        <div class="fields">
+            <input type="text" name="your_name" placeholder="ФИО" class="field"/>
+            <input type="email" name="email" placeholder="Почта" class="field"/>
+            <input type="password" name="password" placeholder="Пароль" class="field"/>
+            <input type="text" name="address" placeholder="Адрес доставки" class="field"/>
+            <input type="submit" value="Зарегистрироваться" class="submit field">
+        </div>
+    </form>
+    </main>
+{% endblock %}

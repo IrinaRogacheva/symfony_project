@@ -3,4 +3,21 @@
 #    controller: App\Controller\DefaultController::index
 my_page:
     path: /RogachevaIrina
-    controller: App\Controller\MyPageController::my_page
+    controller: App\Controller\MyPageController::myPage
+
+menu:
+    path: /
+    controller: App\Controller\MenuController::addingPizzas
+
+registration:
+    path: /registration
+    controller: App\Controller\RegistrationController::registration
+
+authorisation:
+    path: /authorisation
+    controller: App\Controller\AuthorisationController::authorisation
+
+orders:
+    path: /orders
+    controller: App\Controller\OrdersController::orders
+

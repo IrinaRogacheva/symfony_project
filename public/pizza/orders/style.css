@@ -1,0 +1,130 @@
+body
+{
+    margin: 0 auto;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo_block
+{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 1.1rem;
+}
+
+.access_links_block
+{
+    display: flex;
+    margin-right: 3.8888888888888888888888888888889%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.access_links:hover
+{
+    background: #F2960B;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.logo_image
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+.logo
+{
+    font: normal bold 24px/28px Arial;
+    display: flex;
+    align-items: center;
+}
+
+.access_links
+{
+    display: flex;
+    font: normal normal 18px/21px Roboto;
+    align-items: center;
+    border: 1px solid #F2960B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.registration_link
+{
+    width: 169px;
+    height: 40px;
+    text-decoration: none;
+    color: #000;
+}
+
+.authorisation_link
+{
+    width: 91px;
+    height: 40px;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu_orders_tabs
+{
+    display: flex;
+    font: normal normal 16px/19px Roboto;
+    margin-left: 5%;
+    margin-top: 1rem;
+
+}
+
+.menu_orders_links
+{
+    margin-right: 2%;
+    color: #000;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.menu_orders_links:after
+{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #F4A32A;
+}
+
+.menu_orders_links:hover:after
+{
+    width: 100%;
+    line-height: 1;
+}
+
+.menu_orders_links:hover
+{
+    cursor: pointer;
+}
+
+.order
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    padding-bottom: 1%;
+    background: rgba(236, 146, 12, 0.3);
+    height: 43px;
+}
+
+.order_detail
+{
+    font: normal bold 22px/26px Roboto;
+}

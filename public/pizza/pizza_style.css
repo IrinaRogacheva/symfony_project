@@ -10,43 +10,31 @@ body
     align-items: flex-start;
 }
 
-.logo_block
+.logo
 {
     display: flex;
     align-items: center;
-    margin-left: 5%;
-    margin-top: 1.1rem;
+    margin: 1.8rem 0 1% 5%;
+}
+
+.logo_link:hover
+{
+    border-radius: 4px;
+    box-shadow: 0 0 3px 1px #F2960B;
+    padding-left: 2px;
+}
+
+.logo_link:focus
+{
+    padding: 1px 7px 2px;
 }
 
 .access_links_block
 {
     display: flex;
-    margin-right: 3.8888888888888888888888888888889%;
+    margin-right: 4%;
     justify-content: space-between;
     margin-top: 1rem;
-}
-
-.access_links:hover
-{
-    background: #F2960B;
-    border-radius: 10px;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.logo_image
-{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-
-}
-.logo
-{
-    font: normal bold 24px/28px Arial;
-    display: flex;
-    align-items: center;
 }
 
 .access_links
@@ -75,6 +63,14 @@ body
     margin-left: 1.5rem;
     text-decoration: none;
     color: #000;
+}
+
+.access_links:hover
+{
+    background: #F2960B;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .menu_orders_tabs
@@ -110,23 +106,17 @@ body
     line-height: 1;
 }
 
-.menu_orders_links:hover
-{
-    cursor: pointer;
-}
-
 .menu
 {
     display: flex;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 1rem 5% 3rem 5%;
 }
 
 .pizza
 {
-    width: 19.44444444444444444%;
+    width: 22%;
     margin-top: 19px;
     display: flex;
     flex-direction: column;
@@ -137,7 +127,7 @@ body
 {
     width: 100%;
     height: 280px;
-    display: flex;
+    display: block;
     align-items: center;
 }
 
@@ -175,10 +165,125 @@ body
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
-    margin-left: 21%;
+    margin-left: 33%;
 }
 
 .buying:hover
 {
     cursor: pointer;
+}
+
+.menu_orders_links:after
+{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #F4A32A;
+}
+
+.menu_orders_links:hover:after
+{
+    width: 100%;
+    line-height: 1;
+}
+
+.order
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    padding-bottom: 1%;
+    background: rgba(236, 146, 12, 0.3);
+    height: 43px;
+}
+
+.order_detail
+{
+    font: normal bold 22px/26px Roboto;
+}
+
+.flex_form
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 70px 0;
+}
+
+.field_of_form
+{
+    display: flex;
+    border: 1px solid #A2A2A2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
+    width: 636px;
+    height: 636px;
+    padding-left: 13px;
+}
+
+.form_title
+{
+    font: normal normal 40px/47px Roboto;
+    justify-content: center;
+    margin-top: 44px;
+}
+
+.authorisation_form_title
+{
+    margin-bottom: 82px;
+}
+
+.field
+{
+    width: 503px;
+    height: 60px;
+    border: 1px solid #A2A2A2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font: normal normal 24px/28px Roboto;
+    padding-left: 28px;
+    margin-top: 22px;
+}
+
+.field:active
+{
+    border-radius: 20px;
+}
+.submit
+{
+    color: #FFFFFF;
+    background: #F2960B;
+    border: 1px solid #A7A7A7;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.number
+{
+    margin-left: 5%;
+    width: 7.5%;
+}
+
+.order_menu
+{
+    width: 15%;
+}
+
+.order_cost
+{
+    width: 7%;
+}
+
+.client
+{
+    width: 15%;
+}
+
+.status
+{
+    width: 15%;
+    margin-right: 16%;
 }

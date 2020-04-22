@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        {% block stylesheet %}{% endblock %}
+    </head>
+    <body>
+    <header>
+        <div class="flex">
+            <div class="logo_block">
+                <img class="logo_image" alt="logo" src="{{ asset('pizza/menu/images/logo.png') }}"/>
+                <h1 class="logo">ДОЛГО ПИЦЦА</h1>
+            </div>
+            <div class="access_links_block">
+                <a href="/registration" class="registration_link access_links">Регистрация</a>
+                <a  href="/authorisation" class="authorisation_link access_links">Вход</a>
+            </div>
+        </div>
+    </header>
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>

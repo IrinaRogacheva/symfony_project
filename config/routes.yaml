@@ -7,17 +7,17 @@ my_page:
 
 menu:
     path: /
-    controller: App\Controller\MenuController::addingPizzas
+    controller: App\Controller\PizzaController::getMenu
 
 registration:
     path: /registration
-    controller: App\Controller\RegistrationController::registration
+    controller: App\Controller\PizzaController::registration
 
 authorisation:
     path: /authorisation
-    controller: App\Controller\AuthorisationController::authorisation
+    controller: App\Controller\PizzaController::authorisation
 
 orders:
     path: /orders
-    controller: App\Controller\OrdersController::orders
+    controller: App\Controller\PizzaController::getOrders
 

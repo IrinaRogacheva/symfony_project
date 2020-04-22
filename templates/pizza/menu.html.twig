@@ -1,36 +1,18 @@
-{% extends 'base.html.twig' %}
+{% extends 'pizza/pizza.html.twig' %}
 
-{% block stylesheet %}
-    <link href="{{ asset('pizza/menu/style.css') }}" rel="stylesheet"/>
-{% endblock %}
+{% block title %}Долго пицца{% endblock %}
 
 {% block body %}
-    <header>
-        <div class="flex">
-            <div class="logo_block">
-                <img class="logo_image" alt="logo" src="{{ asset('pizza/menu/images/logo.png') }}"/>
-                <h1 class="logo">ДОЛГО ПИЦЦА</h1>
-            </div>
-            <div class="access_links_block">
-                <a href="http://127.0.0.1:8000/registration" class="registration_link access_links">Регистрация</a>
-                <a  href="http://127.0.0.1:8000/authorisation" class="authorisation_link access_links">Вход</a>
-            </div>
-        </div>
-        <div class="menu_orders_tabs">
-            <a class="menu_orders_links">Меню</a>
-            <a href="http://127.0.0.1:8000/orders" class="menu_orders_links">Заказы</a>
-        </div>
-    </header>
     <main class="menu">
-        {% for i in 0..3 %}
+        {% for pizza in menu %}
             <div class="pizza">
                 <div>
-                    <img class="pizza_image" src="{{ menu['image'][i] }}" alt=pizza />
-                    <h2 class="pizza_name">{{ menu['pizza_name'][i] }}</h2>
-                    <p class="description">{{ menu['description'][i] }}</p>
+                    <img class="pizza_image" src="{{ pizza['image'] }}" alt=pizza />
+                    <h2 class="pizza_name">{{ pizza['pizza_name'] }}</h2>
+                    <p class="description">{{ pizza['description'] }}</p>
                 </div>
                 <div>
-                    <h2 class="cost">от {{ menu['cost'][i] }}</h2>
+                    <h2 class="cost">от {{ pizza['cost'] }}</h2>
                     <a class="buying">Купить</a>
                 </div>
             </div>

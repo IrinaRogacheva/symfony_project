@@ -3,21 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}{% endblock %}</title>
+        <link href="{{ asset('pizza/pizza_style.css') }}" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         {% block stylesheet %}{% endblock %}
     </head>
     <body>
     <header>
         <div class="flex">
-            <div class="logo_block">
-                <img class="logo_image" alt="logo" src="{{ asset('pizza/menu/images/logo.png') }}"/>
-                <h1 class="logo">ДОЛГО ПИЦЦА</h1>
-            </div>
+            {% if main_page is defined %}
+                <img class="logo" alt="logo" src="{{ asset('pizza/images/logo.png') }}"/>
+            {% else %}
+                <a href="/" class="logo logo_link">
+                    <img alt="logo" src="{{ asset('pizza/images/logo.png') }}"/>
+                </a>
+            {% endif %}
             <div class="access_links_block">
-                <a href="/registration" class="registration_link access_links">Регистрация</a>
-                <a  href="/authorisation" class="authorisation_link access_links">Вход</a>
+                {% if registration == true %}
+                    <a href="/registration" class="registration_link access_links">Регистрация</a>
+                {% endif %}
+                {% if authorisation == true %}
+                    <a  href="/authorisation" class="authorisation_link access_links">Вход</a>
+                {% endif %}
             </div>
         </div>
+        {% if tabs is defined %}
+        <div class="menu_orders_tabs">
+            <a href="/" class="menu_orders_links">Меню</a>
+            <a href="/orders" class="menu_orders_links">Заказы</a>
+        </div>
+        {% endif %}
     </header>
     {% block body %}{% endblock %}
     {% block javascripts %}{% endblock %}

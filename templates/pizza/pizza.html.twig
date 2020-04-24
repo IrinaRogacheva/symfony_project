@@ -5,15 +5,14 @@
         <title>{% block title %}{% endblock %}</title>
         <link href="{{ asset('pizza/pizza_style.css') }}" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        {% block stylesheet %}{% endblock %}
     </head>
     <body>
     <header>
         <div class="flex">
-            {% if main_page is defined %}
+            {% if mainPage is defined %}
                 <img class="logo" alt="logo" src="{{ asset('pizza/images/logo.png') }}"/>
             {% else %}
-                <a href="/" class="logo logo_link">
+                <a href="/" class="{% if tabs is defined %}logo{% else %}logo_access{% endif %} logo_link">
                     <img alt="logo" src="{{ asset('pizza/images/logo.png') }}"/>
                 </a>
             {% endif %}
@@ -34,6 +33,5 @@
         {% endif %}
     </header>
     {% block body %}{% endblock %}
-    {% block javascripts %}{% endblock %}
     </body>
 </html>

@@ -12,6 +12,19 @@
             <p class="order_detail client">Адрес</p>
             <p class="order_detail status">Статус</p>
         </div>
+        {% for order in orders %}
+            <div class="client_order_block">
+                <p class="number">{{ order['number'] }}</p>
+                <p class="order_menu">{{ order['order_menu'] }}</p>
+                <p class="order_cost">{{ order['order_cost'] }}</p>
+                <p class="client">{{ order['client'] }}</p>
+                <p class="client">{{ order['address'] }}</p>
+                <select name="status" class="client_order status select_status">
+                    <option selected value="active_status" class="status_element">{{ order['status'] }}</option>
+                    <option value="another_status" class="status_element">{{ anotherStatuses[loop.index0] }}</option>
+                </select>
+            </div>
+        {% endfor %}
     </main>
 {% endblock %}
 

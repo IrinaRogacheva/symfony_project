@@ -14,7 +14,14 @@ body
 {
     display: flex;
     align-items: center;
-    margin: 1.8rem 0 1% 5%;
+    margin: 28px 0 30px 5%;
+}
+
+.logo_access
+{
+    display: flex;
+    align-items: center;
+    margin: 32px 0 26px 5%;
 }
 
 .logo_link:hover
@@ -34,7 +41,7 @@ body
     display: flex;
     margin-right: 4%;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 .access_links
@@ -78,8 +85,6 @@ body
     display: flex;
     font: normal normal 16px/19px Roboto;
     margin-left: 5%;
-    margin-top: 1rem;
-
 }
 
 .menu_orders_links
@@ -111,7 +116,7 @@ body
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1rem 5% 3rem 5%;
+    margin: 10px 5%;
 }
 
 .pizza
@@ -146,6 +151,11 @@ body
     margin-left: 2%;
 }
 
+.cost_block
+{
+    margin-bottom: 19px;
+}
+
 .cost
 {
     font: normal normal 22px/26px Roboto;
@@ -156,7 +166,8 @@ body
 
 .buying
 {
-    display: inline-flex;
+    display: flex;
+    float: right;
     width: 91px;
     height: 40px;
     font: normal normal 18px/21px Roboto;
@@ -165,7 +176,6 @@ body
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
-    margin-left: 33%;
 }
 
 .buying:hover
@@ -188,27 +198,12 @@ body
     line-height: 1;
 }
 
-.order
-{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3%;
-    padding-bottom: 1%;
-    background: rgba(236, 146, 12, 0.3);
-    height: 43px;
-}
-
-.order_detail
-{
-    font: normal bold 22px/26px Roboto;
-}
-
 .flex_form
 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 70px 0;
+    margin: 55px 0;
 }
 
 .field_of_form
@@ -252,6 +247,7 @@ body
 {
     border-radius: 20px;
 }
+
 .submit
 {
     color: #FFFFFF;
@@ -259,6 +255,25 @@ body
     border: 1px solid #A7A7A7;
     cursor: pointer;
     margin-top: 50px;
+}
+
+.orders
+{
+    margin-bottom: 40px;
+}
+.order
+{
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    margin-top: 35px;
+    background: rgba(236, 146, 12, 0.3);
+    align-items: center;
+}
+
+.order_detail
+{
+    font: normal bold 22px/26px Roboto;
 }
 
 .number
@@ -284,6 +299,30 @@ body
 
 .status
 {
-    width: 15%;
-    margin-right: 16%;
+    width: 11%;
+    margin-right: 19.5%;
+}
+
+.select_status
+{
+    height: 24px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-top: 22px;
+    background: url(images/arrow_down.png) 92% no-repeat;
+}
+
+.client_order_block
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 14px;
+    font: normal normal 22px/26px Roboto;
+}
+
+.client_order
+{
+    font: normal normal 22px/26px Roboto;
 }

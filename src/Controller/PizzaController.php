@@ -11,40 +11,20 @@ class PizzaController extends AbstractController
         $authorisation = true;
         $registration = true;
         $tabs = true;
-        $main_page = true;
-        $menu =  [
-            [
-                'image' => 'pizza/images/old_pizza.jpg',
-                'pizza_name' => 'Пожилая пицца',
-                'description' => 'Не самые свежие помидоры и мягкие огурцы без пупырышков. Про сыр вообще молчу.',
-                'cost' => '520р'
-            ],
-            [
-                'image' => 'pizza/images/50_shades_of_pizza.jpg',
-                'pizza_name' => '50 оттенков пиццы',
-                'description' => 'Ананасы и маринованная сельдь. Ты точно этого хочешь, больной?',
-                'cost' => '420р'
-            ],
-            [
-                'image' => 'pizza/images/poodle_pizza.jpg',
-                'pizza_name' => 'Пудель',
-                'description' => 'Нежный сыр фета и кудрявые волосы уволенного повара. А нечего было без шапочки готовить.',
-                'cost' => '530р'
-            ],
-            [
-                'image' => 'pizza/images/vanya_invent_name.jpg',
-                'pizza_name' => 'Ваня, придумай название',
-                'description' => 'У меня фантазия на исходе, а еще 3 макета рисовать.',
-                'cost' => '520р'
-            ],
-        ];
+        $mainPage = true;
+        $keys = ['image', 'pizza_name', 'description', 'cost'];
+        $menu = explode("#", file_get_contents("pizza/data/menu.txt"));
+        foreach ($menu as &$value) {
+            $value = explode("|", $value);
+            $value = array_combine($keys, $value);
+        }
 
         return $this->render('pizza/menu.html.twig', [
             'menu' => $menu,
             'authorisation' => $authorisation,
             'registration' => $registration,
             'tabs' => $tabs,
-            'main_page' => $main_page
+            'mainPage' => $mainPage
         ]);
     }
 
@@ -53,11 +33,26 @@ class PizzaController extends AbstractController
         $authorisation = true;
         $registration = true;
         $tabs = true;
+        $keys = ['number', 'order_menu', 'order_cost', 'client', 'address', 'status'];
+        $anotherStatuses = [];
+        $orders = explode("$", file_get_contents("pizza/data/orders.txt"));
+        foreach ($orders as &$value) {
+            $value = explode("|", $value);
+            $value = array_combine($keys, $value);
+            if ($value['status'] == 'Готово') {
+                $anotherStatus = 'В очереди';
+            } else {
+                $anotherStatus = 'Готово';
+            }
+            $anotherStatuses[] = $anotherStatus;
+        }
 
         return $this->render('pizza/orders.html.twig', [
             'authorisation' => $authorisation,
             'registration' => $registration,
-            'tabs' => $tabs
+            'tabs' => $tabs,
+            'orders' => $orders,
+            'anotherStatuses' => $anotherStatuses
         ]);
     }
 
